@@ -1,0 +1,24 @@
+using BaseProj.SharpVectors.SharpVectorCore.Svg.BasicTypes;
+using BaseProj.SharpVectors.SharpVectorCore.Svg.Coordinates;
+
+namespace BaseProj.SharpVectors.SharpVectorCore.Svg.Fills
+{
+    public interface ISvgPatternElement :
+        ISvgElement,
+        ISvgUriReference,
+        ISvgTests,
+        ISvgLangSpace,
+        ISvgExternalResourcesRequired,
+        ISvgStylable,
+        ISvgFitToViewBox /*,
+		ISvgUnitTypes */
+    {
+        ISvgAnimatedEnumeration PatternUnits { get; }
+        ISvgAnimatedEnumeration PatternContentUnits { get; }
+        ISvgAnimatedTransformList PatternTransform { get; }
+        ISvgAnimatedLength X { get; }
+        ISvgAnimatedLength Y { get; }
+        ISvgAnimatedLength Width { get; }
+        ISvgAnimatedLength Height { get; }
+    }
+}

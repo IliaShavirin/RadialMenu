@@ -1,0 +1,94 @@
+﻿<Window x:Class="RadialMenuDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:customControls="clr-namespace:RadialMenu.CustomControls;assembly=RadialMenu"
+        Title="RadialMenu Demo" Height="530" Width="640">
+
+    <Window.Resources>
+        <ResourceDictionary Source="Utils/Icons.xaml" />
+    </Window.Resources>
+    <Grid>
+
+        <customControls:RadialMenu Background="#7f000000"
+                               HalfShiftedItems="False"
+                               MinStrokeThickness="95"
+                               MaxStrokeThickness="120"
+                               Opacity="1"
+                               IsOpen="True">
+
+            <customControls:RadialMenuItem PreviewMouseDown="RadialMenuItem_PreviewMouseDown"
+                                       IsHasSubMenu="True"
+                                       SectorBrush="#B2294FFF"
+                                       Drawing="{DynamicResource Acceleration}"
+                                       Foreground="{DynamicResource BlackBrush}" />
+
+            <customControls:RadialMenuItem PreviewMouseDown="RadialMenuItem_PreviewMouseDown"
+                                       Drawing="{DynamicResource Acceleration}"
+                                       SectorBrush="#B2FF006E"
+                                       Foreground="{DynamicResource BlackBrush}" />
+
+            <customControls:RadialMenuItem PreviewMouseDown="RadialMenuItem_PreviewMouseDown"
+                                       Foreground="{DynamicResource BlackBrush}" />
+
+            <customControls:RadialMenuItem PreviewMouseDown="RadialMenuItem_PreviewMouseDown"
+                                       Drawing="{DynamicResource Acceleration}"
+                                       Foreground="{DynamicResource BlackBrush}" />
+
+            <customControls:RadialMenuItem PreviewMouseDown="RadialMenuItem_PreviewMouseDown"
+                                       Drawing="{DynamicResource Acceleration}"
+                                       Foreground="{DynamicResource BlackBrush}" />
+
+            <customControls:RadialMenuItem PreviewMouseDown="RadialMenuItem_PreviewMouseDown"
+                                       Foreground="{DynamicResource BlackBrush}" />
+
+            <customControls:RadialMenuItem PreviewMouseDown="RadialMenuItem_PreviewMouseDown"
+                                       IsHasSubMenu="True"
+                                       Drawing="{DynamicResource Acceleration}"
+                                       Foreground="{DynamicResource BlackBrush}" />
+
+            <customControls:RadialMenuItem PreviewMouseDown="RadialMenuItem_PreviewMouseDown"
+                                       Drawing="{DynamicResource Acceleration}"
+                                       SectorBrush="#B2FB5607"
+                                       Foreground="{DynamicResource BlackBrush}" />
+
+            <customControls:RadialMenuItem PreviewMouseDown="RadialMenuItem_PreviewMouseDown"
+                                       Drawing="{DynamicResource Acceleration}"
+                                       Foreground="{DynamicResource BlackBrush}" />
+
+            <customControls:RadialMenuItem PreviewMouseDown="RadialMenuItem_PreviewMouseDown"
+                                       IsHasSubMenu="True"
+                                       Drawing="{DynamicResource Acceleration}"
+                                       Foreground="{DynamicResource BlackBrush}" />
+
+            <customControls:RadialMenuItem PreviewMouseDown="RadialMenuItem_PreviewMouseDown"
+                                       Drawing="{DynamicResource Acceleration}"
+                                       Foreground="{DynamicResource BlackBrush}" />
+
+            <customControls:RadialMenuItem PreviewMouseDown="RadialMenuItem_PreviewMouseDown"
+                                       Foreground="{DynamicResource BlackBrush}"
+                                       SectorBrush="#B205D2FF" />
+
+            <customControls:RadialMenuItem PreviewMouseDown="RadialMenuItem_PreviewMouseDown"
+                                       IsHasSubMenu="True"
+                                       SectorBrush="#B25A5A5A"
+                                       Foreground="{DynamicResource BlackBrush}" />
+
+            <customControls:RadialMenuItem PreviewMouseDown="RadialMenuItem_PreviewMouseDown"
+                                       Drawing="{DynamicResource Acceleration}"
+                                       Foreground="{DynamicResource BlackBrush}" />
+
+            <customControls:RadialMenuItem PreviewMouseDown="RadialMenuItem_PreviewMouseDown"
+                                       Drawing="{DynamicResource Acceleration}"
+                                       Foreground="{DynamicResource BlackBrush}" />
+
+            <customControls:RadialMenuItem PreviewMouseDown="RadialMenuItem_PreviewMouseDown"
+                                       IsHasSubMenu="True"
+                                       SectorBrush="#B2007965"
+                                       Drawing="{DynamicResource Acceleration}"
+                                       Foreground="{DynamicResource BlackBrush}" />
+
+
+        </customControls:RadialMenu>
+    </Grid>
+
+</Window>
